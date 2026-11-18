@@ -53,7 +53,7 @@ To undo a link, use `unlink` on that installed destination. To restore previous 
 
 ## Instructions and skills
 
-`AGENTS.md` contains the GitHub issue branching workflow and the default `--no-ff` merge rule. It supplies shared instructions to both agents. Project-level instructions can add to or override personal defaults according to each agent's loading rules; for example, a Codex `AGENTS.override.md` can take precedence over this installed file.
+As of 18 November 2026, `AGENTS.md` contains the GitHub issue branching workflow and the default `--no-ff` merge rule. It supplies shared instructions to both agents. Project-level instructions can add to or override personal defaults according to each agent's loading rules; for example, a Codex `AGENTS.override.md` can take precedence over this installed file.
 
 The three `SKILL.md` files are currently empty placeholders, so the installer skips them. To enable a skill, fill in its `SKILL.md` with a `name`, a `description`, and workflow instructions, then rerun the installer. Non-empty manifests are eligible for linking; the installer does not validate their YAML or the workflow itself. See [OpenAI's skill authoring documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude's skill documentation](https://code.claude.com/docs/en/skills).
 
