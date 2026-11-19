@@ -28,3 +28,13 @@ This workflow applies to all GitHub repositories.
   unless explicitly instructed otherwise.
 - Preserve feature branch history with a dedicated merge commit.
 - Do not merge branches without explicit user authorization.
+
+## Implementation Scope
+
+Keep the requested outcome in view and use your judgment about what belongs in the change. Avoid changes that add churn without improving the code.
+
+- Fix bugs you find along the way when it makes sense to address them as part of the work.
+- Add unit tests when you find meaningful gaps in coverage.
+- Remove code that your changes leave unused after checking for remaining callers and other uses.
+
+Summarize any incidental fixes, tests, or removals so the user can review the full change.
