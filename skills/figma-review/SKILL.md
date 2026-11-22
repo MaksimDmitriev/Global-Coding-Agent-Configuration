@@ -38,6 +38,8 @@ Use existing design tokens, component roles, and platform conventions to judge c
 
 ## Report findings
 
+Save the full review as a Markdown (`.md`) file directly in the folder where the skill was invoked, even if you inspect files in other directories. Link to the saved report in your final response.
+
 Name the reviewed frame or flow and app revision or build, plus the platforms, states, themes, and sizes actually checked. Lead with the findings that most affect the user's next action or ability to recover.
 
 - **Designer’s assessment** recommends a visual baseline in plain language, says what is already working, and names the highest-impact change to try first. Distinguish the design patterns you can see from standards you propose adopting.
