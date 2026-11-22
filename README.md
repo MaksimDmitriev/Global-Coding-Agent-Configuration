@@ -55,7 +55,9 @@ To undo a link, use `unlink` on that installed destination. To restore previous 
 
 As of 18 November 2026, `AGENTS.md` contains the GitHub issue branching workflow and the default `--no-ff` merge rule. It supplies shared instructions to both agents. Project-level instructions can add to or override personal defaults according to each agent's loading rules; for example, a Codex `AGENTS.override.md` can take precedence over this installed file.
 
-The three `SKILL.md` files are currently empty placeholders, so the installer skips them. To enable a skill, fill in its `SKILL.md` with a `name`, a `description`, and workflow instructions, then rerun the installer. Non-empty manifests are eligible for linking; the installer does not validate their YAML or the workflow itself. See [OpenAI's skill authoring documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude's skill documentation](https://code.claude.com/docs/en/skills).
+The `figma-review` skill compares responsive web pages and native Android and iOS screens with their approved Figma designs. It reports implementation differences, practical UX suggestions, and verification gaps. Ask Codex to use `$figma-review` or invoke `/figma-review` in Claude Code with the screen or flow and its Figma link.
+
+The `code-review` and `project-qa` skills are empty placeholders, so the installer skips them. To enable a skill, fill in its `SKILL.md` with a `name`, a `description`, and workflow instructions, then rerun the installer. Non-empty manifests are eligible for linking; the installer does not validate their YAML or the workflow itself. See [OpenAI's skill authoring documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude's skill documentation](https://code.claude.com/docs/en/skills).
 
 Keep shared skill instructions independent of a particular agent. Both support the Agent Skills format, but tool names, connectors, permissions, and agent-specific metadata can differ. Install any tools a workflow requires separately and verify the skill in each agent. Keep project-specific QA commands, simulator setup, and hardware constraints in that project's own skill.
 
